@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <title> Home </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{url_for('static',filename= 'css/css/site-01.css')}}" rel="stylesheet">
+    <img src="{{url_for('static', filename= 'img/Logo-lari.jpg')}}" alt="imagem de brigadeiro">
+    <h1>Doce atelie </h1> 
   </head> 
   <body>
-    <h1>Doce Atelie</h1>
     <h1>{{variavel}}</h1>
     <form action="{{url_for('index')}}",method= "post">
       <label for="">Número</label><br>

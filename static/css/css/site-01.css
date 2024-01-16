@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+h1{
+  font-family:'Times New Roman', Times, serif; 
+  font-size: 30pt; 
+  color: rgb(242, 99, 255);
+} 
+
+button{
+  background-color: rgb(252, 211, 236);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10pt;
+  color:rgb(242, 99, 255);
+}
+
+img{
+  width: 25%;
+  height: 25%;
+
+
+}
