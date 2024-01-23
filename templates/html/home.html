@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title> Home </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/site-01.css" rel="stylesheet">
-    <img src="img/Logo-lari.jpg" alt="imagem de brigadeiro">
-    <h1>Doce atelie </h1> 
-  </head> 
-  <body>
-    <h1>{{variavel}}</h1>
-    <form action="{{url_for('index')}}",method= "post">
-      <label for="">Número</label><br>
-      <input type="text" name="name" placeholder="Insira um número"><br>
-      <button type=""> Enviar </button>  
-    </form>
-  </body>
-</html>
+    {%extends 'html/base.html'%}
+    {%block conteudo%}  
+      <form action="http://127.0.0.1:5000/login",name="name" method= "post">
+          <label for="text">LOGIN</label><br>    
+          <input type="text" name="name" placeholder="Digite seu nome" id="text"><br>    
+          <input type="text" name="password" placeholder="Digite a senha" id="text"><br>
+          <p>{{erro}}</p>      
+        <button type=""> Enviar </button>  
+      </form>
+    </div>
+    {%endblock%}
+
