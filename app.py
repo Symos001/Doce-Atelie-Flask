@@ -8,6 +8,9 @@ app= Flask(__name__, static_folder="static")
 def index():
     return render_template("/html/home.html")
 
+@app.route("/entrar")
+def entrar():
+    return render_template("/html/entrar.html")
 
 @app.route("/login", methods = ["POST"])
 def login():
