@@ -1,5 +1,29 @@
     {%extends 'html/base.html'%}
     {%block conteudo%}  
-      
+    <main>
+        <div class="container-fluid">
+                <div id="main_slider" class="carousel slide " data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#main_slider" data-slide-to="1"></li>
+                        <li data-target="#main_slider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/static/img/Foto-Brigadeiros1.png" alt="Brigadeiros">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Faça seu pedido!!!</h2>
+                            <p>Acesse nosso cardápio por aqui!</p>
+                            <a href="/Produtos" class="main-btn">Ver cardápio</a>
+                        </div>
+                        <img class="d-block w-100" src="/static/img/Foto-brigadeiros2.png">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Doces feitos com muito amor e carinho</h2>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </main>
     {%endblock%}
 
