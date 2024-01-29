@@ -9,7 +9,7 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet"> 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="/static/css/style-navbar.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -36,47 +36,16 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
             <div class="navbar-nav">
-              <a href="nav-item nav-link" id="home-menu">Pagina inicial</a>
-              <a href="nav-item nav-link" id="about-menu">Sobre</a>
-              <a href="nav-item nav-link" id="services-menu">Produtos</a>
-              <a href="nav-item nav-link" id="contacts-menu">Contatos</a>
-              <a href="nav-item nav-link" id="login-menu">Entrar</a>
+              <a class="nav-item nav-link" href="/" id="home-menu">Pagina inicial</a>
+              <a class="nav-item nav-link" href="/Sobre" id="about-menu">Sobre</a>
+              <a class="nav-item nav-link" href="/Produtos" id="services-menu">Produtos</a>
+              <a class="nav-item nav-link" href="/Contatos" id ="contacts-menu">Contatos</a>
+              <a class="nav-item nav-link" href="/login" id="login-menu">Entrar</a>
             </div>
-          </div>
-          
-
-          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/">Pagina inicial <span class="sr-only"> Pagina inicial </span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/Produtos">Produtos <span class="sr-only"></span></a>
-                </li>
-  
-                <li class="nav-item active">
-                  <a class="nav-link" href="/Sobre">Sobre <span class="sr-only">(página atual)</span></a>
-                </li>
-                
-                <li class="nav-item active">
-                  <a class="nav-link" href="/Contatos">Contatos <span class="sr-only">(página atual)</span></a>
-                </li> 
-                <li class="nav-item active">
-                  <a class="nav-link" href="/entrar">Entrar <span class="sr-only">(página atual)</span></a>
-                </li> 
-              </li> 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
           </div>
         </nav>
       </div>
     </header>
-      
-      
-
       {% block conteudo %}
       {% endblock %}
   </body>
