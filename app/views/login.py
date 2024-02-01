@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,request
-from models.forms import LoginForm
+from app.models.forms import LoginForm
 
 login_page = Blueprint('login', __name__)
 

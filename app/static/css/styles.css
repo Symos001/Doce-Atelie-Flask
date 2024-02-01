@@ -137,7 +137,18 @@ header, .navbar {
 .about-title{
     font-size: 17px;
     color: #444;
-    text-transform: ;
+    
 }
 
+#about-area p{
+    font-size: 14px;
+    color: #444;
+}
 
+#about-list i {
+    color: #39d624;
+}
+
+#about-list li {
+    color: #444;
+}
